@@ -53,7 +53,6 @@ function analyzeSalesData(data, options) {
   }
   // @TODO: Проверка наличия опций
   const { calculateRevenue, calculateBonus } = options;
-
   if (!calculateRevenue || !calculateBonus) {
     throw new Error("Нет функций расчёта");
   }
